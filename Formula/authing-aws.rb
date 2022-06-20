@@ -6,12 +6,12 @@ class AuthingAws < Formula
   desc "Fetching your AWS Access token via Authing"
   homepage "https://github.com/dreampuf/authing-aws"
   version "0.0.1"
-  license "Apache 2.0"
+  license "GPL-3.0 license"
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/dreampuf/authing-aws/releases/download/v0.0.1/authing-aws_0.0.1_Darwin_x86_64.tar.gz"
-      sha256 "0b58c46126e44d40346b0e7c640a7d58881409e5e72ebef228cdebcbd1449cad"
+      sha256 "b0d3a0e56912ddfc52d01e7699ddf1f64cdcad8b5ef12793d39f9ef27dc9adad"
 
       def install
         bin.install "authing-aws"
@@ -19,7 +19,7 @@ class AuthingAws < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/dreampuf/authing-aws/releases/download/v0.0.1/authing-aws_0.0.1_Darwin_arm64.tar.gz"
-      sha256 "e3b5403055d678c73eece7ee8fbd728cd6538a55438ff7a145de7e081b77331f"
+      sha256 "648580a2bfa2212c60b83604791d7bb01e4d26b9c6cc8753731a01fee209b91a"
 
       def install
         bin.install "authing-aws"
@@ -30,7 +30,7 @@ class AuthingAws < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/dreampuf/authing-aws/releases/download/v0.0.1/authing-aws_0.0.1_Linux_x86_64.tar.gz"
-      sha256 "038d10c579a23c9dc9bc19ca7a854da7b0b841193f880011d2686ea9c7781568"
+      sha256 "c242dfcf2a4d411deb63d712ed176e9f7a3a6072529b5d7c188754fcdf01cdf8"
 
       def install
         bin.install "authing-aws"
@@ -38,7 +38,7 @@ class AuthingAws < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/dreampuf/authing-aws/releases/download/v0.0.1/authing-aws_0.0.1_Linux_arm64.tar.gz"
-      sha256 "9cf9d32f1e859d713ae164539d288ab53508213619c9d8e858af1cb6a98e616d"
+      sha256 "2c38ab966239118353260ae409dcacc889f369022794970961aeb99ed29babf5"
 
       def install
         bin.install "authing-aws"
