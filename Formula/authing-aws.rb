@@ -5,21 +5,21 @@
 class AuthingAws < Formula
   desc "Fetching your AWS Access token via Authing"
   homepage "https://github.com/dreampuf/authing-aws"
-  version "0.0.1"
+  version "0.0.2"
   license "GPL-3.0 license"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/dreampuf/authing-aws/releases/download/v0.0.1/authing-aws_0.0.1_Darwin_x86_64.tar.gz"
-      sha256 "b0d3a0e56912ddfc52d01e7699ddf1f64cdcad8b5ef12793d39f9ef27dc9adad"
+    if Hardware::CPU.arm?
+      url "https://github.com/dreampuf/authing-aws/releases/download/v0.0.2/authing-aws_0.0.2_Darwin_arm64.tar.gz"
+      sha256 "759f4e57c0d313854a3bf5c29c6a62cab3eca1f9dda384bf21f0baa12e13582d"
 
       def install
         bin.install "authing-aws"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/dreampuf/authing-aws/releases/download/v0.0.1/authing-aws_0.0.1_Darwin_arm64.tar.gz"
-      sha256 "648580a2bfa2212c60b83604791d7bb01e4d26b9c6cc8753731a01fee209b91a"
+    if Hardware::CPU.intel?
+      url "https://github.com/dreampuf/authing-aws/releases/download/v0.0.2/authing-aws_0.0.2_Darwin_x86_64.tar.gz"
+      sha256 "a16a9351eccf97378c477f1a02315a6558d0eaca1a0ba204527d178535cf5c52"
 
       def install
         bin.install "authing-aws"
@@ -29,16 +29,16 @@ class AuthingAws < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/dreampuf/authing-aws/releases/download/v0.0.1/authing-aws_0.0.1_Linux_x86_64.tar.gz"
-      sha256 "c242dfcf2a4d411deb63d712ed176e9f7a3a6072529b5d7c188754fcdf01cdf8"
+      url "https://github.com/dreampuf/authing-aws/releases/download/v0.0.2/authing-aws_0.0.2_Linux_x86_64.tar.gz"
+      sha256 "78f54d63a65559266fbd9f18ed4fcf400202b9f3359050afbe872cf939db0cdb"
 
       def install
         bin.install "authing-aws"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dreampuf/authing-aws/releases/download/v0.0.1/authing-aws_0.0.1_Linux_arm64.tar.gz"
-      sha256 "2c38ab966239118353260ae409dcacc889f369022794970961aeb99ed29babf5"
+      url "https://github.com/dreampuf/authing-aws/releases/download/v0.0.2/authing-aws_0.0.2_Linux_arm64.tar.gz"
+      sha256 "dee0a71fde8b693fcc103971e18ffa6136bbdab26e1a147ddde20a3f258854a5"
 
       def install
         bin.install "authing-aws"
